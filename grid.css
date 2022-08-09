@@ -1,0 +1,48 @@
+header {
+    grid-area: head;
+}
+
+nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+footer {
+    grid-area: footer;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "head" "nav" "main" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 1fr 30px;
+}
+
+article.left {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+article.right {
+    display: grid;
+    align-self: right;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
