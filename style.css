@@ -54,12 +54,6 @@ footer {
   }
   
   
-  #image {
-    background: url("https://resize.hswstatic.com/w_907/gif/rabbits-crazy-march-1a.jpg");
-    background-size: cover;
-    background-position: -50px;
-  }
-  
   a::before,
   a::after {
     content: ' | ';
